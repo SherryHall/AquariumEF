@@ -19,6 +19,7 @@ namespace AquariumEF
 
 		public DbSet<Aquarium> Aquariums { get; set; }
 		public DbSet<AquaticLife> AquaticLifes { get; set; }
-		public DbSet<Ocean> Ocean { get; set; }
+		public DbSet<AquariumAquaticLife> AquariumAquaticLifes { get; set; }
+		public DbSet<Ocean> Oceans { get; set; }
 	}
 }

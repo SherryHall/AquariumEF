@@ -14,5 +14,7 @@ namespace AquariumEF.Models
 		public string Color { get; set; }
 		public double Length { get; set; }
 		public double Weight { get; set; }
+
+		public virtual ICollection<AquariumAquaticLife> AquariumAquaticLifes { get; set; } = new HashSet<AquariumAquaticLife>();
 	}
 }

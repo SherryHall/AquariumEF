@@ -17,5 +17,6 @@ namespace AquariumEF.Models
 
 		public int? Ocean_Id { get; set; }
 		public virtual Ocean Ocean { get; set; }
+
 	}
 }
