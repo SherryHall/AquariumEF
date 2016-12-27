@@ -11,6 +11,12 @@ namespace AquariumEF.Models
 		public string Name { get; set; }
 		public double AvgTemp { get; set; }
 
-		public virtual ICollection<AquariumAquaticLife> AquariumAquaticLifes { get; set; } = new HashSet<AquariumAquaticLife>();
+
+		public override string ToString()
+		{
+			var rv = $"{Id}, {Name}, Average Temp: {AvgTemp}";
+			return rv;
+
+		}
 	}
 }
